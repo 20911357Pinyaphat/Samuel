@@ -1,3 +1,10 @@
+const SUPABASE_URL = "https://jpzmxrjowgegyrbybdmx.supabase.co";
+const SUPABASE_KEY = "sb_publishable_skoXDQf9b4cYT4JvlMraDQ_1U_V2L6R";
+
+const supabaseClient = supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+);
 // ---------- FIND OUR ELEMENTS ----------
 
 const openButton = document.getElementById("openInvitation");
@@ -230,17 +237,31 @@ noButton.addEventListener("click", function () {
 // ACCEPT INVITATION
 // ========================================
 
-function acceptInvitation() {
+async function acceptInvitation() {
 
+    // Save Samuel's RSVP to Supabase
+    const { error } = await supabaseClient
+        .from("rsvp")
+        .insert([
+            {
+                response: "yes"
+            }
+        ]);
+
+    if (error) {
+        console.error("RSVP error:", error);
+    } else {
+        console.log("RSVP saved!");
+    }
+
+    // Show confirmation page
     rsvp.classList.remove("show");
-
     confirmation.classList.add("show");
 
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
-
 }
 
 
