@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>An Invitation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="invitation">
+
+        <!-- ==================== HEADER ==================== -->
+
+        <header class="letter-header">
+            <span>A → S</span>
+
+            <span class="date">
+                PERTH, WA<br>
+                10th SEPTEMBER 2026
+            </span>
+        </header>
+
+
+        <!-- ==================== OPENING ==================== -->
+
+        <section class="opening">
+
+            <p class="handwritten-note">
+                you have plans :)
+            </p>
+
+            <h1>
+                Samuel,<br>
+                you have<br>
+                plans.
+            </h1>
+
+            <div class="little-line"></div>
+
+            <p class="subtitle">
+                An invitation from Aimee.
+            </p>
+
+            <button id="openInvitation">
+                open invitation →
+            </button>
+
+        </section>
+
+
+        <!-- ==================== LETTER ==================== -->
+
+        <section class="letter" id="letter">
+
+            <p class="letter-label">
+                A SMALL INVITATION
+            </p>
+
+            <h2>Dear Samuel,</h2>
+
+            <p>
+                I am sorry for being sooo annoying to you lately.
+            </p>
+
+            <p>
+                I did say I'd make it up to you by taking u out for dinner (you pay for drinks tho)
+            </p>
+
+            <p>
+                Sooooo.. i made a whole website too
+            </p>
+
+            <p>
+                (see how im not just sexy but also smart and funny too)
+            </p>
+
+            <div class="letter-signature">
+                — Pinyaphat
+            </div>
+
+            <p class="letter-note">
+                ps. ur annoying too<br>
+                :)
+            </p>
+
+            <button id="seePlan">
+                see the plan ↓
+            </button>
+
+        </section>
+
+
+        <!-- ==================== PLAN ==================== -->
+
+        <section class="plan" id="plan">
+
+            <div class="tape-title">
+                here's the plan.
+            </div>
+
+            <div class="timeline">
+
+
+                <!-- PICKUP -->
+
+                <div class="timeline-item">
+
+                    <div class="number">
+                        01
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>PICKUP</h3>
+
+                        <p class="time">
+                            6:00 PM
+                        </p>
+
+                        <p>
+                            I'll walk to your house<br>
+                            and we'll uber from there<br>
+                            (vice versa if you want to walk to my house).
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DINNER -->
+
+                <div class="timeline-item">
+
+                    <div class="number">
+                        02
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>DINNER</h3>
+
+                        <p class="time">
+                            6:30 PM
+                        </p>
+
+                        <p>
+                            Destination currently classified.
+                        </p>
+
+                        <button id="revealRestaurant">
+                            open envelope to reveal →
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- AFTER -->
+
+                <div class="timeline-item">
+
+                    <div class="number">
+                        03
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>AFTER</h3>
+
+                        <p>
+                            Make love :) ps. location TBA
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <p class="plan-note">
+                sooo samuel<br>
+                r u excited ?
+            </p>
+
+        </section>
+<!-- ==================== RESTAURANT REVEAL ==================== -->
+
+<section class="restaurant-reveal" id="restaurantReveal">
+
+    <p class="reveal-note">
+        tap to open ↓
+    </p>
+
+    <div class="envelope" id="envelope">
+
+        <!-- Back of envelope -->
+        <div class="envelope-back"></div>
+
+
+        <!-- Restaurant card hidden inside -->
+        <div class="restaurant-card" id="restaurantCard">
+
+            <p class="card-label">
+                DINNER / 10 SEPTEMBER
+            </p>
+
+            <h2>
+                Tipsy Cow<br>
+                Steakhouse.
+            </h2>
+
+            <p class="restaurant-details">
+                6:30 PM<br>
+                29 Lindsay St, Perth
+            </p>
+
+            <p class="card-note">
+                100% protein protein protein <br>
+                for your big back :P
+            </p>
+
+            <a
+                class="restaurant-link"
+                href="https://tipsycowwa.com/date-night-restaurant-perth/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                visit website ↗
+            </a>
+
+        </div>
+
+
+        <!-- Front pocket -->
+        <div class="envelope-front"></div>
+
+
+        <!-- Envelope flap -->
+        <div class="envelope-flap"></div>
+
+
+        <!-- Wax seal -->
+        <div class="seal">
+            A
+        </div>
+
+    </div>
+
+
+    <p class="tiny-instruction">
+        OPEN THE ENVELOPE
+    </p>
+<button id="continueToRsvp">
+    continue →
+</button>
+</section>
+<!-- ==================== RSVP ==================== -->
+
+<section class="rsvp" id="rsvp">
+
+    <p class="rsvp-label">
+        ONE IMPORTANT QUESTION
+    </p>
+
+    <p class="rsvp-note" id="rsvpNote">
+    choose wisely :)
+</p>
+
+    <h2>
+        Samuel,<br>
+        are you accepting<br>
+        this invitation?
+    </h2>
+
+    <div class="rsvp-buttons">
+
+        <button id="yesButton">
+            yes obviously
+        </button>
+
+        <button id="noButton">
+            no
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ==================== CONFIRMATION ==================== -->
+
+<section class="confirmation" id="confirmation">
+
+    <p class="confirmation-label">
+        CONFIRMED
+    </p>
+
+    <h2>
+        excellent<br>
+        choice.
+    </h2>
+
+    <div class="confirmation-line"></div>
+
+    <p class="confirmation-details">
+        10 SEPTEMBER 2026<br>
+        6:00 PM
+    </p>
+
+    <p class="confirmation-message">
+        I'll see you then :3
+    </p>
+    <p class="confirmation-note">
+        yay!<br>
+        it's a date :p
+    </p>
+
+</section>
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
